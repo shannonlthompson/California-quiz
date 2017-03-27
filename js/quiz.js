@@ -22,7 +22,7 @@ function californiaQuiz() {
             answeredRightMsg += "<p>" + rightAnswers + ". " + questionsArray[i][0] + "</p>";
         } else {
             wrongAnswers += 1;
-            answeredWrongMsg += "<p>" + wrongAnswers + ". " + questionsArray[i][0] + "</p>";
+            answeredWrongMsg += "<p>" + wrongAnswers + ". " + questionsArray[i][0] + "</p>" + "<p>The correct answer was " + wrongAnswers + questionsArray[i][1] + ".</p>";
         }
     }
     document.write("<h2>You got " + rightAnswers + " question(s) correct.</h2>");
